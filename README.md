@@ -44,3 +44,8 @@ rm -rf ~/.ollama/models/manifests/registry.ollama.ai/library/llama3.2
 ```
 ls ~/.ollama/models/manifests/registry.ollama.ai/library
 ```
+
+## To run flask app
+```
+python app.py
+```
