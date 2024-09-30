@@ -5,10 +5,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def chat():
+    model_name = 'llama3.2'
     response_message = ""
     if request.method == 'POST':
         user_input = request.form['user_input']
-        response = ollama.chat(model='llama3.2', messages=[
+        response = ollama.chat(model=model_name, messages=[
             {
                 'role': 'user',
                 'content': user_input,
